@@ -7,7 +7,7 @@
 }
 
 .header{
-    height: 37rem;
+    height: 39rem;
 }
 
 .header main{
@@ -109,6 +109,10 @@
 @media (max-width:700px) {
     .header main{
         padding-top: 4rem;
+    }
+    .header main h3,
+    .header main h1{
+        font-size: 1.5rem;
     }
     .head-body > div:nth-child(3),
     .head-body > div:nth-child(1){
