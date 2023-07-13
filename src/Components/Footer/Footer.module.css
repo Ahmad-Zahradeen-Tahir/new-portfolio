@@ -60,4 +60,7 @@ footer .small{
     footer{
         padding: 2rem;
     }
+    footer ul{
+        gap: 1.5rem;
+    }
 }
