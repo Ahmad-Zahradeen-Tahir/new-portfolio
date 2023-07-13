@@ -54,7 +54,7 @@
 } */
 
 .me{
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 15rem;
     height: 15rem;
     border: 2px solid rgb(255, 189, 96);
@@ -68,7 +68,7 @@
 }
 
 .btns{
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 18rem;
     height: 3rem;
     display: flex;
@@ -110,6 +110,9 @@
     .header main{
         padding-top: 4rem;
     }
+    .header{
+        height: 39rem;
+    }
     .me{
         width: 13rem;
         height: 14rem;
@@ -117,6 +120,9 @@
     .header main h3,
     .header main h1{
         font-size: 1.5rem;
+    }
+    .head-body > div:nth-child(2){
+        padding: 2rem;
     }
     .head-body > div:nth-child(3),
     .head-body > div:nth-child(1){
