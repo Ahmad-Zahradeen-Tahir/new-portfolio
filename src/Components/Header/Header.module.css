@@ -1,0 +1,121 @@
+.headBg{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: .4;
+    position: absolute;
+}
+
+.header{
+    height: 37rem;
+}
+
+.header main{
+    padding-top: 6rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.header main span{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.header main h1,
+.header main h3{
+    font-size: 2.5rem;
+    margin: 0;
+    margin: .5rem;
+}
+
+.head-body div:nth-child(1){
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.head-body div:nth-child(3){
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.lot{
+    width: 15rem;
+    height: 15rem;
+}
+
+.head-body div:nth-child(3) .lot{
+    height: 19rem;
+}
+
+/* .head-body *{
+    border: 1px solid red;
+} */
+
+.me{
+    margin: 1rem auto;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid rgb(255, 189, 96);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.me img{
+    width: 100%;
+    height: 100%;
+}
+
+.btns{
+    margin: 1rem auto;
+    width: 18rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+}
+
+.btns a{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 189, 96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: .2rem;
+    color: rgb(255, 189, 96);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btns a:hover{
+    background-color: rgb(255, 189, 96);
+    color: black;
+}
+
+.btns a svg{
+    font-size: 1rem;
+    border: none;
+}
+
+.head-body{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:700px) {
+    .header main{
+        padding-top: 4rem;
+    }
+    .head-body > div:nth-child(3),
+    .head-body > div:nth-child(1){
+        display: none;
+    }
+    .head-body{
+        align-items: center;
+        justify-content: center;
+    }
+}
