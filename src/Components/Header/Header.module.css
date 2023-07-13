@@ -7,7 +7,7 @@
 }
 
 .header{
-    height: 39rem;
+    height: 37rem;
 }
 
 .header main{
@@ -109,6 +109,10 @@
 @media (max-width:700px) {
     .header main{
         padding-top: 4rem;
+    }
+    .me{
+        width: 13rem;
+        height: 14rem;
     }
     .header main h3,
     .header main h1{
