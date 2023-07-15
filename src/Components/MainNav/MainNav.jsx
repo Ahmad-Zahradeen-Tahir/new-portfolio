@@ -48,7 +48,7 @@ const MainNav = () => {
           </a>
         </div>
         <div className={classes["git-div"]}>
-          <a href="https://github.com/Ahmad-Zahradeen-Tahir">
+          <a target="blank" href="https://github.com/Ahmad-Zahradeen-Tahir">
             <BsGithub />
           </a>
           {showMenu ? (
