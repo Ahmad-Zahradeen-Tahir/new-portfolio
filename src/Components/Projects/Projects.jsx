@@ -126,7 +126,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <a href={el.link} className={classes.img}>
+              <a href={el.link} target="blank" className={classes.img}>
                 <div className={classes.cut}></div>
                 <img src={el.img} alt="" />
               </a>
