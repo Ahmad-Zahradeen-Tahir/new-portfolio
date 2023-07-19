@@ -32,13 +32,15 @@ const Contact = () => {
           setStat_mes("Something went wrong");
         }
       );
-    setShowStatus(true);
     setTimeout(() => {
-      setShowStatus(false);
-    }, 3000);
-    setEnteredName("");
-    setEnteredMail("");
-    setEnteredText("");
+      setShowStatus(true);
+      setTimeout(() => {
+        setShowStatus(false);
+      }, 4000);
+      setEnteredName("");
+      setEnteredMail("");
+      setEnteredText("");
+    }, 2500);
   };
 
   return (
