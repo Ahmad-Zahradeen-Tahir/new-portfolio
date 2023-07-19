@@ -180,6 +180,43 @@
   font-size: 1rem;
 }
 
+@media (max-width: 1200px) {
+  .projects-body * {
+    /* border: 1px solid red;*/
+  }
+  .cut {
+    border-left: 5rem solid rgb(43, 43, 43);
+  }
+  .work div p {
+    overflow: scroll;
+    padding: 0;
+    height: 75%;
+  }
+  .work div h3 {
+    font-size: 1rem;
+  }
+  .btns {
+    padding: 0.3rem;
+    gap: 0.5rem;
+  }
+  .btns a {
+    font-size: 1rem;
+    gap: 0.3rem;
+  }
+  .works {
+    width: 100%;
+  }
+  .projects-body > button {
+    display: none;
+  }
+  .pChanger {
+    display: flex;
+  }
+  .work:hover {
+    transform: scale(1.02);
+  }
+}
+
 @media (max-width: 700px) {
   .projects-body * {
     /* border: 1px solid red; */

@@ -50,6 +50,10 @@ nav div {
   color: white;
 }
 
+.git-div svg:hover{
+  color: rgba(255, 189, 96);
+}
+
 .nav-div a {
   height: fit-content;
   color: white;
