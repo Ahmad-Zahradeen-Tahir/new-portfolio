@@ -1,30 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import classes from "./Contact.module.css";
 import { MdOutlineMail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import Lottie from "lottie-react";
 import anim from "../../assets/84584-contact-us.json";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredmail, setEnteredMail] = useState("");
   const [enteredText, setEnteredText] = useState("");
+  const [stat_mes, setStat_mes] = useState("");
   const [showStatus, setShowStatus] = useState(false);
-  const submitHandler = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      name: enteredName,
-      email: enteredmail,
-      text: enteredText,
-    };
-    console.log(data);
+    emailjs
+      .sendForm(
+        "service_mmw3k0c",
+        "template_wj6k1mb",
+        form.current,
+        "jqZC19BoXjMsT1B3y"
+      )
+      .then(
+        (result) => {
+          setStat_mes("Message sent successfully");
+        },
+        (error) => {
+          console.log(error.text);
+          setStat_mes("Something went wrong");
+        }
+      );
     setShowStatus(true);
-    setEnteredName("");
-    setEnteredMail("");
-    setEnteredText("");
     setTimeout(() => {
       setShowStatus(false);
     }, 3000);
+    setEnteredName("");
+    setEnteredMail("");
+    setEnteredText("");
   };
 
   return (
@@ -50,7 +64,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <form onSubmit={submitHandler}>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               required
               value={enteredName}
@@ -84,14 +98,31 @@ const Contact = () => {
               required
             ></textarea>
             {showStatus && (
-              <span>
-                {"Message sent Successfully"}
+              <span
+                className={
+                  stat_mes == "Message sent successfully"
+                    ? classes.yes
+                    : classes.no
+                }
+              >
+                {stat_mes}
               </span>
             )}
             <button type="submit">Send message</button>
           </form>
         </div>
         <div className={classes.right}>
+          {showStatus && (
+            <span
+              className={
+                stat_mes == "Message sent successfully"
+                  ? classes.yes
+                  : classes.no
+              }
+            >
+              {stat_mes}
+            </span>
+          )}
           <Lottie animationData={anim} className={classes.lot} />
         </div>
       </main>
