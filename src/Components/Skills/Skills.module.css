@@ -78,7 +78,7 @@
 
 @media (max-width:700px){
     .skills{
-        padding: 1rem;
+        padding: 1.5rem;
     }
     .skill-container svg{
         font-size: 4rem;

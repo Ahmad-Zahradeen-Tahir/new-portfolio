@@ -72,10 +72,6 @@ const Skills = () => {
           <SiRedux />
           <span>Redux</span>
         </div>
-        <div className={classes["skill-container"]}>
-          <SiMicrosoftexcel />
-          <span>Excel</span>
-        </div>
       </div>
     </section>
   );
