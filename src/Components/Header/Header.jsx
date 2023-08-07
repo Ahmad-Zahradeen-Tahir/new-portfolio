@@ -7,7 +7,7 @@ import me from "../../assets/me.png";
 import hi1 from "../../assets/112545-wumpus-hi.json";
 import hi2 from "../../assets/130913-hi-demo-2.json";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import cv from "../../assets/Mr._Ahmad Zahradeen Tahir_Resume_13-07-2023-16-00-13.pdf";
+import cv from "../../assets/Mr._Ahmad Zahradeen Tahir_Resume_07-08-2023-16-21-49.pdf";
 
 const Header = () => {
   const [role] = useTypewriter({
