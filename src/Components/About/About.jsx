@@ -4,12 +4,14 @@ import Lottie from 'lottie-react'
 import anim from '../../assets/99312-developer-skills.json'
 
 const About = () => {
+  const today = new Date();
+  let myAge = today.getFullYear() - 2004;
   return (
     <section id="about" className={classes.about}>
         <div>
           <h1>About me</h1>
           <p>
-            Hi there, my name is Ahmad Zahradeen Tahir and I'm an 18 year old
+            Hi there, my name is Ahmad Zahradeen Tahir and I'm a {myAge} year old
             self-taught front-end engineer.
             <br />
             <br />
