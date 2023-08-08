@@ -23,13 +23,6 @@ const PROJECT_DATA = [
     img: scissor,
   },
   {
-    title: "PMS (Property Management System)",
-    link: "https://pms-lyart.vercel.app/",
-    repo: "https://github.com/Ahmad-Zahradeen-Tahir/PMS",
-    desc: "This fullstack fintech application, built with React, streamlines property management for landlords and tenants. It offers features such as property listings, rental applications, and secure online payments using Paystack. With a user-friendly interface and effective communication channels, the application revolutionizes property management, providing convenience and efficiency for all parties involved.",
-    img: pms,
-  },
-  {
     title: "Anime Zone",
     link: "https://anime-zone-psi.vercel.app/",
     repo: "https://github.com/Ahmad-Zahradeen-Tahir/anime-zone",
@@ -49,6 +42,13 @@ const PROJECT_DATA = [
     repo: "https://github.com/Ahmad-Zahradeen-Tahir/Food-Order-App",
     desc: "This food order application, developed using React, offers a user-friendly interface to view and place orders at a restaurant. The menu is retrieved from a Firebase database, and orders are stored in another database. React hooks like useEffect, useContext, useReducer, and useState were utilized for the application's functionality.",
     img: food,
+  },
+  {
+    title: "PMS (Property Management System)",
+    link: "https://pms-lyart.vercel.app/",
+    repo: "https://github.com/Ahmad-Zahradeen-Tahir/PMS",
+    desc: "This fullstack fintech application, built with React, streamlines property management for landlords and tenants. It offers features such as property listings, rental applications, and secure online payments using Paystack. With a user-friendly interface and effective communication channels, the application revolutionizes property management, providing convenience and efficiency for all parties involved.",
+    img: pms,
   },
   {
     title: "Rock Paper Scissors",
